@@ -3,7 +3,7 @@
 
 #include "bubbleSort.h"
 
-#define DEBUG 1
+// #define DEBUG 1
 
 void printArray(int *v, int n) {
   for (int i = 0; i < n; i++) {
@@ -12,7 +12,7 @@ void printArray(int *v, int n) {
   printf("\n");
 }
 
-int *VetorAleatorio(int n, int seed, int max) {
+int *randomArray(int n, int seed, int max) {
   srand(seed);
   int *v = malloc(sizeof(int) * n);
 
@@ -23,18 +23,23 @@ int *VetorAleatorio(int n, int seed, int max) {
 }
 
 int main(int argc, char **argv) {
+  // atoi da stdlib serve para :
   int n = atoi(argv[1]);
-  int *v = VetorAleatorio(n, 99, n * 100);
+  int *v = randomArray(n, 99, n * 100);
 
-#ifdef DEBUG
+  // #ifdef DEBUG
+  printf("vetor aleatorio:");
   printArray(v, n);
-#endif
+  printf("\n");
+  // #endif
 
   bubbleSort(v, n);
 
-#ifdef DEBUG
+  // #ifdef DEBUG
+  printf("vetor ordenado:");
   printArray(v, n);
-#endif
+  printf("\n");
+  // #endif
 
   free(v);
 

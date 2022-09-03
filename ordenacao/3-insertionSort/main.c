@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
 
 // #ifdef DEBUG
 //   printArray(v, n);
-//   printArray(v2, n);
+  printArray(v2, n);
 // #endif
 
   free(v);

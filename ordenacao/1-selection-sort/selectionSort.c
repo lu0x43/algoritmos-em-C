@@ -5,7 +5,7 @@ int returnMaxPosition(int *v, int ini, int fim) {
   // se é ou nao)
   int maior = ini; // posicao do maior ja visto
 
-  for (int i = ini + 1; i < fim; i++) {
+  for (int i = ini + 1; i <= fim; i++) {
     if (v[i] > v[maior]) {
       maior = i; // atualiza o maior ja visto
     }

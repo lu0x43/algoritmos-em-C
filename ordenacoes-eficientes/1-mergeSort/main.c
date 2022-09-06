@@ -10,13 +10,15 @@ void printArray(int *v, int n)
   printf("\n");
 }
 
-int main()
+int main(int argc, char **argv)
 {
   int v[] = {3, 5, 6, 0, 4, 7};
-  int v2[] = {2, 8, 6, 0, 1, 7};
-  int left = 0, right = 5;
   int n = sizeof(v) / sizeof(int);
+
+  int v2[] = {2, 8, 6, 0, 1, 7};
   int n2 = sizeof(v2) / sizeof(int);
+  
+  int left = 0, right = 5;
 
   printf("Size of array: %d \n\nVetor:", n);
   printArray(v, n);

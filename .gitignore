@@ -51,5 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-ordenacoes-eficientes/
+ordenacoes-eficientes/3-heap-sort/
+ordenacoes-eficientes/4-counting-sort/
+
 desafios/

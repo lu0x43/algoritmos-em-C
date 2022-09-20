@@ -36,7 +36,6 @@ int main(int argc, char **argv)
 
   int left = 0, right = numRand - 1;
 
-  // printf("Size of array: %d \n\nVetor:", n);
   // printArray(v, n);
 
   // printf("Merge:\n");

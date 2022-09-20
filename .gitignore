@@ -51,4 +51,5 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-ordenacoes-eficientes/2-quickSort/
+# ordenacoes-eficientes/
+desafios/

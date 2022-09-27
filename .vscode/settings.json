@@ -1,4 +1,7 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.editor.wrapTabs": true
+    "workbench.editor.wrapTabs": true,
+    "files.associations": {
+        "stdlib.h": "c"
+    }
 }

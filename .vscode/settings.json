@@ -3,5 +3,9 @@
     "workbench.editor.wrapTabs": true,
     "files.associations": {
         "stdlib.h": "c"
-    }
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }

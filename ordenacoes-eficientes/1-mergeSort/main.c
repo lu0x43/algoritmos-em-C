@@ -18,12 +18,15 @@ int main()
   int n = sizeof(v) / sizeof(int);
   int n2 = sizeof(v2) / sizeof(int);
 
-  printf("Size of array: %d \n\nVetor:", n);
+  printf("Size of array: %d \n\nVetor 1:\n", n);
   printArray(v, n);
 
   printf("Merge:\n");
   merge(v, 0, 2, 5);
   printArray(v, n);
+
+  printf("\nVetor 2:\n");
+  printArray(v2, n2);
 
   printf("\nMerge Sort:\n");
   mergeSort(v2, left, right);

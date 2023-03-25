@@ -1,7 +1,7 @@
 all:
-	gcc -c merge.c
-	gcc -c main.c
-	gcc -o main merge.o main.o
+	gcc -c merge.c -g
+	gcc -c main.c -g 
+	gcc -o main merge.o main.o -g
 
 clean:
 	rm -rf *.o main

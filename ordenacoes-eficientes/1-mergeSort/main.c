@@ -14,6 +14,8 @@ int *randArray(int n, int seed, int max)
   return v;
 }
 
+#define DEBUG 0
+
 void printArray(int *v, int n)
 {
   for (int i = 0; i < n; i++)
@@ -31,6 +33,8 @@ int main(int argc, char **argv)
   int v2[] = {2, 8, 6, 0, 1, 7};
   int n2 = sizeof(v2) / sizeof(int);
 
+  printf("Size of array: %d \n\nVetor 1:\n", n);
+  printArray(v, n);
   int numRand = atoi(argv[1]);
   int *vRand = randArray(numRand, 99, numRand * 100);
 
@@ -38,9 +42,12 @@ int main(int argc, char **argv)
 
   // printArray(v, n);
 
-  // printf("Merge:\n");
-  // merge(v, 0, 2, 5);
-  // printArray(v, n);
+  printf("Merge:\n");
+  merge(v, 0, 2, 5);
+  printArray(v, n);
+
+  printf("\nVetor 2:\n");
+  printArray(v2, n2);
 
   printArray(vRand, numRand);
   printf("\nMerge Sort:\n");

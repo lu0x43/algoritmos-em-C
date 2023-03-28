@@ -1,6 +1,8 @@
 #include "merge.h"
 #include <stdio.h>
 
+#define DEBUG 0
+
 void printArray(int *v, int n)
 {
   for (int i = 0; i < n; i++)
